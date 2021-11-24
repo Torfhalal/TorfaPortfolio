@@ -1,3 +1,36 @@
 body{
-    background-color: grey;
+    margin: 0;
+    padding: 0 15%;
+    background-color: #1b1b1b;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .left-part{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .right-part{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            a{
+                display: inline-block;
+                padding: 0 10px;
+            }
+        }
+        .currentPage{
+            color: #eebf63;
+        }
+    }
 }

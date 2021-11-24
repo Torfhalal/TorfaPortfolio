@@ -1,4 +1,43 @@
 body {
-  background-color: grey;
+  margin: 0;
+  padding: 0 15%;
+  background-color: #1b1b1b;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+#header .left-part {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#header .right-part ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header .right-part ul a {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#header .right-part .currentPage {
+  color: #eebf63;
 }
 /*# sourceMappingURL=style.css.map */
