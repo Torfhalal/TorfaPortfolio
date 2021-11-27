@@ -1,9 +1,9 @@
-function landingButtonsIn(button){
+function landingButtonsIn(button, color){
     buttonPath = button.querySelector("path");
-    buttonPath.style.fill = "whitesmoke";
+    buttonPath.style.fill = color;
 }
 
-function landingButtonsOut(button){
+function landingButtonsOut(button, color){
     buttonPath = button.querySelector("path");
-    buttonPath.style.fill = "#1b1b1b";
+    buttonPath.style.fill = color;
 }

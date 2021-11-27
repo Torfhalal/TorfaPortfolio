@@ -37,6 +37,10 @@ ul li {
   font-size: 42px;
 }
 
+.text38px {
+  font-size: 38px;
+}
+
 .weight500 {
   font-weight: 500;
 }
@@ -133,6 +137,12 @@ ul li {
   display: flex;
 }
 
+#landing-about .left-part .buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #landing-about .left-part .buttons-row a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -162,7 +172,7 @@ ul li {
 }
 
 #landing-about .left-part .buttons-row a:last-child {
-  margin: 0 0 0 15px;
+  margin: 0 0 0 20px;
 }
 
 #landing-about .left-part .buttons-row a:hover {
@@ -222,5 +232,88 @@ ul li {
   max-height: 350px;
   margin: 12% 0 0 -68%;
   border-radius: 50%;
+}
+
+#landing-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 75px 0 0 0;
+  padding: 15px 45px;
+  background-color: #cd921e;
+  border-radius: 10px;
+}
+
+#landing-contact .left-part {
+  width: 25%;
+  text-align: left;
+}
+
+#landing-contact .right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 60%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#landing-contact .right-part .buttons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#landing-contact .right-part .buttons-row a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+#landing-contact .right-part .buttons-row a svg {
+  padding: 0 5px 0 0;
+}
+
+#landing-contact .right-part .buttons-row a svg path {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+#landing-contact .right-part .buttons-row a:last-child {
+  margin: 0 0 0 20px;
+}
+
+#landing-contact .right-part .buttons-row a:hover {
+  background-color: whitesmoke;
+  color: #1b1b1b;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
 /*# sourceMappingURL=style.css.map */

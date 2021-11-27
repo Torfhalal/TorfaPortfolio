@@ -38,6 +38,10 @@ ul{
     font-size: 42px;
 }
 
+.text38px{
+    font-size: 38px;
+}
+
 .weight500{
     font-weight: 500;
 }
@@ -101,6 +105,7 @@ ul{
             }
         }
         .buttons-row{
+            display: flex;
             a{
                 display: inline-flex;
                 justify-content: center;
@@ -120,7 +125,7 @@ ul{
 
             }
             a:last-child{
-                margin: 0 0 0 15px;
+                margin: 0 0 0 20px;
             }
             a:hover{
                 background-color: transparent;
@@ -161,6 +166,58 @@ ul{
                 max-height: 350px;
                 margin: 12% 0 0 -68%;
                 border-radius: 50%;
+            }
+        }
+    }
+}
+
+#landing-contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px 0 0 0;
+    padding: 15px 45px;
+    background-color: #cd921e;
+    border-radius: 10px;
+    .left-part{
+        width: 25%;
+        text-align: left;
+    }
+    .right-part{ 
+        display: flex;
+        justify-content: right;
+        align-self: center;
+        width: 60%;
+        height: max-content;
+        .buttons-row{
+            display: flex;
+            justify-content: right;
+            a{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 12px;
+                background-color: transparent;
+                border: 2px solid whitesmoke;
+                border-radius: 5px;
+                color: whitesmoke;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 250ms;
+                svg{
+                    padding: 0 5px 0 0;
+                    path{
+                        transition-duration: 250ms;
+                    }  
+                }
+
+            }
+            a:last-child{
+                margin: 0 0 0 20px;
+            }
+            a:hover{
+                background-color: whitesmoke;
+                color: #1b1b1b;
+                transition-duration: 250ms;
             }
         }
     }
