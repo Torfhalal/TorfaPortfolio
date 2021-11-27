@@ -134,10 +134,29 @@ ul li {
 }
 
 #landing-about .left-part .buttons-row a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 10px;
   background-color: #cd921e;
   border: 2px solid #cd921e;
   border-radius: 5px;
+  text-align: center;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+#landing-about .left-part .buttons-row a svg {
+  padding: 0 5px 0 0;
+}
+
+#landing-about .left-part .buttons-row a svg path {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
@@ -164,10 +183,44 @@ ul li {
   width: 50%;
 }
 
-#landing-about .right-part img {
+#landing-about .right-part div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 0;
+}
+
+#landing-about .right-part div .landing-about-img-hexagon {
+  width: 70%;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 24% 0 0 0;
+  -webkit-transform: scaleX(-1) scaleY(-1) translateX(10%) translateY(-50%) rotate(20deg);
+          transform: scaleX(-1) scaleY(-1) translateX(10%) translateY(-50%) rotate(20deg);
+  z-index: -1;
+}
+
+#landing-about .right-part div .landing-about-img-circle {
+  width: 70%;
+  max-width: 350px;
+  max-height: 350px;
+  margin: 0 0 0 -50%;
+  border-radius: 50%;
+  outline: 1px solid #676767;
+  z-index: -2;
+}
+
+#landing-about .right-part div .landing-about-img {
   width: 75%;
   max-width: 350px;
   max-height: 350px;
+  margin: 12% 0 0 -68%;
   border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
