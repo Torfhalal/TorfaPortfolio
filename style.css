@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0 15%;
   background-color: #1b1b1b;
   color: whitesmoke;
   font-family: 'Poppins', sans-serif;
@@ -43,6 +42,10 @@ ul li {
 
 .weight500 {
   font-weight: 500;
+}
+
+.paddingX {
+  padding: 0 15%;
 }
 
 #header {
@@ -315,5 +318,72 @@ ul li {
   color: #1b1b1b;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 75px 0 0 0;
+  border-top: 2px solid grey;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#footer .left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 24px;
+}
+
+#footer .middle-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+#footer .middle-part ul a {
+  padding: 0 10px;
+}
+
+#footer .middle-part ul svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#footer .right-part a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

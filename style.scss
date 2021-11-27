@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    padding: 0 15%;
     background-color: #1b1b1b;
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
@@ -46,6 +45,10 @@ ul{
     font-weight: 500;
 }
 
+
+.paddingX{
+    padding: 0 15%;
+}
 
 
 #header{
@@ -219,6 +222,42 @@ ul{
                 color: #1b1b1b;
                 transition-duration: 250ms;
             }
+        }
+    }
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 75px 0 0 0;
+    border-top: 2px solid grey;
+    user-select: none;
+    .left-part{
+        display: flex;
+        align-self: center;
+        height: max-content;
+        font-size: 24px;
+    }
+    .middle-part{
+        ul{
+            display: flex;
+            align-items: center;
+            padding: 25px 0;
+            a{
+                padding: 0 10px;
+            }
+            svg{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .right-part{
+        display: flex;
+        align-self: center;
+        a{
+            display: inline-flex;
+            align-items: center;
         }
     }
 }
