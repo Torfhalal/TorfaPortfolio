@@ -178,14 +178,55 @@ ul{
     }
 }
 
-#landing-why{
+#landing-projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 75px 0 0 0;
     .top-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
+    .bottom-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0 0 0;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 48.5%;
+            .top-card{
+                img{
+                    max-width: 100%;
+                    border-radius: 15px;
+                }
+            }
+            .bottom-card{
+                width: 100%;
+                padding: 15px 0 0 0;
+                div{
+                    display: flex;
+                    a{
+                        margin: 0 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#landing-why{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0 0 0;
     .bottom-part{
         display: flex;
         justify-content: space-between;
