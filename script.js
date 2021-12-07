@@ -1,9 +1,9 @@
-function landingButtonsIn(button, color){
+function changeIconColorIn(button, color){
     buttonPath = button.querySelector("path");
     buttonPath.style.fill = color;
 }
 
-function landingButtonsOut(button, color){
+function changeIconColorOut(button, color){
     buttonPath = button.querySelector("path");
     buttonPath.style.fill = color;
 }

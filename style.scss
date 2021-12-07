@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background-color: #1b1b1b;
@@ -63,6 +67,7 @@ ul{
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    user-select: none;
     .left-part{
         font-size: 20px;
         font-weight: bold;
@@ -70,7 +75,6 @@ ul{
     .left-part:hover{
         color: #eebf63;
         transition-duration: 250ms;
-        user-select: none;
     }
     .right-part{
         a{
@@ -82,11 +86,12 @@ ul{
             transition-duration: 250ms;
         }
         .currentPage{
-            color: #eebf63;
+            color: #cd921e;
+            font-weight: 500;
             transition-duration: 250ms;
         }
         .currentPage:hover{
-            color: white;
+            color: whitesmoke;
             transition-duration: 250ms;
         }
     }
@@ -113,6 +118,9 @@ ul{
             }
             svg{
                 display: flex;
+                path{
+                    transition-duration: 250ms;
+                }  
             }
         }
         .buttons-row{
@@ -149,6 +157,7 @@ ul{
         justify-content: center;
         align-self: center;
         width: 50%;
+        user-select: none;
         div{
             display: flex;
             justify-content: center;
@@ -210,7 +219,6 @@ ul{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             padding: 30px 0 0 0;
         }
     }
@@ -222,11 +230,19 @@ ul{
     justify-content: center;
     align-items: center;
     padding: 75px 0 0 0;
+    user-select: none;
     .top-part{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        a{
+            transition-duration: 250ms;
+        }
+        a:hover{
+            color: #eebf63;
+            transition-duration: 250ms;
+        }
     }
     .bottom-part{
         display: flex;
@@ -252,6 +268,11 @@ ul{
                     display: flex;
                     a{
                         margin: 0 25px;
+                        transition-duration: 250ms;
+                    }
+                    a:hover{
+                        color: #eebf63;
+                        transition-duration: 250ms;
                     }
                 }
             }
@@ -268,7 +289,7 @@ ul{
     .bottom-part{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         padding: 30px 0 0 0;
         .card{
             display: flex;
@@ -352,19 +373,21 @@ ul{
     background-color: #386163;
     .top-part{
         width: 50%;
+        text-align: center;
     }
     .middle-part{
         padding: 30px 0;
         .thumbnails-row{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+            display: grid;
+            grid-template-columns: 5% 43% 4% 43% 5%;
+            grid-template-rows: 100%;
             .card{
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 35%;
+                width: 100%;
                 padding: 30px;
                 background-color: #2f2f2f;
                 border-radius: 15px 0 15px 15px;
@@ -388,6 +411,12 @@ ul{
                     }
                 }
             }
+            .first-card{
+                grid-column: 2 / 3;
+            }
+            .second-card{
+                grid-column: 4 / 5;
+            }
         }
     }
 }
@@ -402,6 +431,13 @@ ul{
         align-self: center;
         height: max-content;
         font-size: 24px;
+        a{
+            transition-duration: 250ms;
+        }
+        a:hover{
+            color: #cd921e;
+            transition-duration: 250ms;
+        }
     }
     .middle-part{
         ul{
@@ -414,6 +450,9 @@ ul{
             svg{
                 display: flex;
                 align-items: center;
+                path{
+                    transition-duration: 250ms;
+                }  
             }
         }
     }
@@ -423,6 +462,16 @@ ul{
         a{
             display: inline-flex;
             align-items: center;
+            transition-duration: 250ms;
+            svg{
+                path{
+                    transition-duration: 250ms;
+                }
+            }
+        }
+        a:hover{
+            color: #6fc2c5;
+            transition-duration: 250ms;
         }
     }
 }
