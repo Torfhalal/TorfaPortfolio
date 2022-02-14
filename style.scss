@@ -484,7 +484,7 @@ ul{
 
 .grey-bar{
     height: 3px;
-    margin: 75px 0;
+    margin: 60px 0;
     background-color: #2f2f2f;
     border-radius: 15px;
 }
@@ -509,6 +509,7 @@ ul{
     .right-part{
         margin: 0 0 0 25px;
         ul{
+            padding: 5px 0 0 0;
             a{
                 li{
                     img{
@@ -522,6 +523,10 @@ ul{
 }
 
 #about-description{
+    text-align: justify;
+    img{
+        border-radius: 15px;
+    }
     .top-text{}
     .middle-img{
         margin: 60px 0;
@@ -531,11 +536,13 @@ ul{
     }
     .bottom-text{
         p:last-child{
-            margin: 45px 0;
+            margin: 45px 0 0 0;
         }
     }
     .bottom-video{
-        margin: 60px 0;
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 45px 0;
         img{
             width: 100%;
         }
@@ -543,5 +550,52 @@ ul{
 }
 
 #about-location{ 
+    display: flex;
+    justify-content: center;
+    margin: 90px 0 0 0;
+    padding: 60px 45px;
     background-color: #486074;
+    .left-part{
+        width: 35%;
+        text-align: left;
+    }
+    .right-part{ 
+        display: flex;
+        justify-content: right;
+        align-self: center;
+        width: 35%;
+        height: max-content;
+        .buttons-row{
+            display: flex;
+            justify-content: right;
+            a{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 12px;
+                background-color: transparent;
+                border: 2px solid whitesmoke;
+                border-radius: 5px;
+                color: whitesmoke;
+                font-size: 20px;
+                text-align: center;
+                transition-duration: 250ms;
+                svg{
+                    padding: 0 5px 0 0;
+                    path{
+                        transition-duration: 250ms;
+                    }  
+                }
+
+            }
+            a:last-child{
+                margin: 0 0 0 20px;
+            }
+            a:hover{
+                background-color: whitesmoke;
+                color: #1b1b1b;
+                transition-duration: 250ms;
+            }
+        }
+    }
 }
