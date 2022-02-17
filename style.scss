@@ -1,11 +1,34 @@
+/*   Primary Color   */
+$light-yellow: #eebf63;
+$skyBlue: #90c0e8;
+$light-algaeBlue: #6fc2c5;
+$dark-yellow: #cd921e;
+$blueGrey: #486074;
+$algaeBlue: #386163;
+
+/*   Terciary Color   */
+$black: #1b1b1b;
+$light-black: #2f2f2f;
+$grey: #828282;
+$light-grey: #e1e1e1;
+$very-light-grey: #f1f1f1;
+$white: #ffffff;
+
+/*   Corner Radius   */
+$br-10: 10px;
+$br-20: 20px;
+$br-25: 25px;
+$br-30: 30px;
+$br-45: 45px;
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
-    background-color: #1b1b1b;
-    color: whitesmoke;
+    background-color: $black;
+    color: $very-light-grey;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,7 +37,7 @@ p{
 }
 
 a{
-    color: white;
+    color: $white;
     text-decoration: none;
 }
 
@@ -30,11 +53,11 @@ ul{
 
 
 .yellow-text{
-    color: #eebf63;
+    color: $light-yellow;
 }
 
 .grey-text{
-    color: #676767;
+    color: $grey;
 }
 
 .text42px{
@@ -77,7 +100,7 @@ ul{
         font-weight: bold;
     }
     .left-part:hover{
-        color: #eebf63;
+        color: $light-yellow;
         transition-duration: 250ms;
     }
     .right-part{
@@ -86,16 +109,16 @@ ul{
             transition-duration: 250ms;
         }
         a:hover{
-            color: #eebf63;
+            color: $light-yellow;
             transition-duration: 250ms;
         }
         .currentPage{
-            color: #cd921e;
+            color: $dark-yellow;
             font-weight: 500;
             transition-duration: 250ms;
         }
         .currentPage:hover{
-            color: whitesmoke;
+            color: $very-light-grey;
             transition-duration: 250ms;
         }
     }
@@ -134,9 +157,9 @@ ul{
                 justify-content: center;
                 align-items: center;
                 padding: 5px 10px;
-                background-color: #cd921e;
-                border: 2px solid #cd921e;
-                border-radius: 5px;
+                background-color: $dark-yellow;
+                border: 2px solid $dark-yellow;
+                border-radius: $br-10;
                 text-align: center;
                 transition-duration: 250ms;
                 svg{
@@ -171,8 +194,8 @@ ul{
                 width: 70%;
                 max-width: 300px;
                 max-height: 300px;
-                margin: 24% 0 0 0;
-                transform: scaleX(-1) scaleY(-1) translateX(10%) translateY(-50%) rotate(20deg);
+                margin: 0 20% 0 0;
+                transform: scaleX(-1) scaleY(-1) translateX(10%) translateY(-50%) rotate(40deg);
                 z-index: -1;
             }
             .landing-about-img-circle{
@@ -181,7 +204,7 @@ ul{
                 max-height: 350px;
                 margin: 0 0 0 -50%;
                 border-radius: 50%;
-                outline: 1px solid #676767;
+                outline: 1px solid $grey;
                 z-index: -2;
             }
             .landing-about-img{
@@ -201,13 +224,13 @@ ul{
     align-items: center;
     padding: 40px;
     margin: 75px 0 0 0;
-    background-color: #2f2f2f;
-    border-radius: 25px;
+    background-color: $light-black;
+    border-radius: $br-25;
     .left-part{
         width: 35%;
         img{
             max-width: 100%;
-            border-radius: 25px;
+            border-radius: $br-25;
         }
     }
     .right-part{
@@ -244,7 +267,7 @@ ul{
             transition-duration: 250ms;
         }
         a:hover{
-            color: #eebf63;
+            color: $light-yellow;
             transition-duration: 250ms;
         }
     }
@@ -262,7 +285,7 @@ ul{
             .top-card{
                 img{
                     max-width: 100%;
-                    border-radius: 15px;
+                    border-radius: $br-20;
                 }
             }
             .bottom-card{
@@ -275,7 +298,7 @@ ul{
                         transition-duration: 250ms;
                     }
                     a:hover{
-                        color: #eebf63;
+                        color: $light-yellow;
                         transition-duration: 250ms;
                     }
                 }
@@ -306,7 +329,7 @@ ul{
                 img{
                     max-width: 100%;
                     max-height: 200px;
-                    border-radius: 25px;
+                    border-radius: $br-25;
                 }
             }
             .bottom-card{
@@ -321,8 +344,8 @@ ul{
     justify-content: space-evenly;
     margin: 75px 0;
     padding: 15px 45px;
-    background-color: #cd921e;
-    border-radius: 10px;
+    background-color: $dark-yellow;
+    border-radius: $br-10;
     .left-part{
         width: 25%;
         text-align: left;
@@ -342,9 +365,9 @@ ul{
                 align-items: center;
                 padding: 8px 12px;
                 background-color: transparent;
-                border: 2px solid whitesmoke;
-                border-radius: 5px;
-                color: whitesmoke;
+                border: 2px solid $very-light-grey;
+                border-radius: $br-10;
+                color: $very-light-grey;
                 font-size: 20px;
                 text-align: center;
                 transition-duration: 250ms;
@@ -360,8 +383,8 @@ ul{
                 margin: 0 0 0 20px;
             }
             a:hover{
-                background-color: whitesmoke;
-                color: #1b1b1b;
+                background-color: $very-light-grey;
+                color: $black;
                 transition-duration: 250ms;
             }
         }
@@ -374,7 +397,7 @@ ul{
     justify-content: center;
     align-items: center;
     padding: 30px 15%;
-    background-color: #386163;
+    background-color: $algaeBlue;
     .top-part{
         width: 50%;
         text-align: center;
@@ -393,8 +416,8 @@ ul{
                 align-items: center;
                 width: 100%;
                 padding: 30px;
-                background-color: #2f2f2f;
-                border-radius: 15px 0 15px 15px;
+                background-color: $light-black;
+                border-radius: $br-20 0 $br-20 $br-20;
                 .top-card{
                     width: 90%;
                 }
@@ -407,7 +430,7 @@ ul{
                         max-width: 50px;
                         max-height: 50px;
                         margin: 0 15px 0 0;
-                        border-radius: 50%;
+                        border-radius: $br-45;
                     }
                     .job{
                         font-size: 14px;
@@ -439,7 +462,7 @@ ul{
             transition-duration: 250ms;
         }
         a:hover{
-            color: #cd921e;
+            color: $dark-yellow;
             transition-duration: 250ms;
         }
     }
@@ -474,7 +497,7 @@ ul{
             }
         }
         a:hover{
-            color: #6fc2c5;
+            color: $light-algaeBlue;
             transition-duration: 250ms;
         }
     }
@@ -485,8 +508,8 @@ ul{
 .grey-bar{
     height: 3px;
     margin: 60px 0;
-    background-color: #2f2f2f;
-    border-radius: 15px;
+    background-color: $light-black;
+    border-radius: $br-20;
 }
 
 #about-landing{
@@ -503,7 +526,7 @@ ul{
             width: 100%;
             max-width: 350px;
             max-height: 350px;
-            border-radius: 10%;
+            border-radius: $br-10;
         }
     }
     .right-part{
@@ -525,7 +548,7 @@ ul{
 #about-description{
     text-align: justify;
     img{
-        border-radius: 15px;
+        border-radius: $br-20;
     }
     .top-text{}
     .middle-img{
@@ -554,7 +577,7 @@ ul{
     justify-content: center;
     margin: 90px 0 0 0;
     padding: 60px 45px;
-    background-color: #486074;
+    background-color: $blueGrey;
     .left-part{
         width: 35%;
         text-align: left;
@@ -574,9 +597,9 @@ ul{
                 align-items: center;
                 padding: 8px 12px;
                 background-color: transparent;
-                border: 2px solid whitesmoke;
-                border-radius: 5px;
-                color: whitesmoke;
+                border: 2px solid $very-light-grey;
+                border-radius: $br-10;
+                color: $very-light-grey;
                 font-size: 20px;
                 text-align: center;
                 transition-duration: 250ms;
@@ -592,8 +615,8 @@ ul{
                 margin: 0 0 0 20px;
             }
             a:hover{
-                background-color: whitesmoke;
-                color: #1b1b1b;
+                background-color: $very-light-grey;
+                color: $black;
                 transition-duration: 250ms;
             }
         }
