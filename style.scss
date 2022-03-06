@@ -71,6 +71,10 @@ ul{
     font-weight: 700;
 }
 
+.weight600{
+    font-weight: 600;
+}
+
 .weight500{
     font-weight: 500;
 }
@@ -110,23 +114,29 @@ ul{
         transition-duration: 250ms;
     }
     .right-part{
+        display: flex;
+        align-items: center;
         font-weight: 700;
-        a{
-            padding: 0 10px;
-            transition-duration: 250ms;
-        }
-        a:hover{
-            color: $light-yellow;
-            transition-duration: 250ms;
-        }
-        .currentSelected{
-            color: $dark-yellow;
-            font-weight: 500;
-            transition-duration: 250ms;
-        }
-        .currentSelected:hover{
-            color: $very-light-grey;
-            transition-duration: 250ms;
+        ul{
+            display: flex;
+            justify-content: center;
+            a{
+                padding: 0 10px;
+                transition-duration: 250ms;
+            }
+            a:hover{
+                color: $light-yellow;
+                transition-duration: 250ms;
+            }
+            .currentSelected{
+                color: $dark-yellow;
+                font-weight: 500;
+                transition-duration: 250ms;
+            }
+            .currentSelected:hover{
+                color: $very-light-grey;
+                transition-duration: 250ms;
+            }
         }
     }
 }
@@ -324,7 +334,7 @@ ul{
     .bottom-part{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         padding: 30px 0 0 0;
         .card{
             display: flex;
@@ -372,32 +382,35 @@ ul{
     }
     .bottom-part{
         display: flex;
-        justify-content: space-between;
-        align-items: start;
-        padding: 30px 0 0 0;
-        .card{
+        .row{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 20%;
-            text-align: center;
-            .top-card{
-                img{
-                    max-width: 100%;
-                    max-height: 200px;
-                    border-radius: $br-25;
+            justify-content: space-around;
+            align-items: start;
+            padding: 30px 0 0 0;
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                text-align: center;
+                .top-card{
+                    img{
+                        max-width: 100%;
+                        max-height: 200px;
+                        border-radius: $br-25;
+                    }
                 }
-            }
-            .bottom-card{
-                padding: 15px 0 0 0;
-                p:first-child{
-                    font-size: $size-24;
-                    line-height: 36px;
-                }
-                p:last-child{
-                    font-size: $size-18;
-                    line-height: 30px;
+                .bottom-card{
+                    padding: 15px 0 0 0;
+                    p:first-child{
+                        font-size: $size-24;
+                        line-height: 36px;
+                    }
+                    p:last-child{
+                        font-size: $size-18;
+                        line-height: 30px;
+                    }
                 }
             }
         }
@@ -576,7 +589,7 @@ ul{
 #about-landing{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 75px 0 0 0;
     .left-part{
         display: flex;
@@ -735,26 +748,669 @@ ul{
     }
     .bottom-part{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: start;
-        padding: 30px 0 0 0;
+        padding: 50px 0 0 0;
         .card{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 20%;
+            width: 47.5%;
+            padding: 0 0 100px 0;
             text-align: center;
             .top-card{
                 img{
                     max-width: 100%;
-                    max-height: 200px;
+                    max-height: 500px;
                     border-radius: $br-25;
                 }
             }
             .bottom-card{
-                padding: 15px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 30px 0 0 0;
+                text-align: left;
+                p{
+                    font-size: $size-24;
+                }
+                div{
+                    padding: 15px 0 0 0;
+                    line-height: 24px;
+                    a:first-child{
+                        margin: 0 15px 0 0;
+                    }
+                }
             }
         }
     }
+}
+
+.projects{
+    .right-part{
+        .buttons-row{
+            a{
+                margin: 0!important;
+            }
+        }
+    }
+}
+
+#case-header{
+    padding: 75px 0 0 0;
+    p:first-child{
+        font-size: $size-18;
+        line-height: 32px;
+    }
+    p:nth-child(2){
+        font-size: $size-48;
+        line-height: 62px;
+    }
+    div{
+        display: flex;
+        padding: 30px 0 0 0;
+        div{
+            display: flex;
+            flex-direction: column;
+            padding: 0 36px 0 0;
+            p{
+                font-size: $size-24;
+            }
+        }
+    }
+    div:last-child{
+        padding: 0;
+    }
+}
+
+#case-description{
+    text-align: justify;
+    font-size: $size-18;
+    line-height: 45px;
+    img{
+        border-radius: $br-20;
+    }
+    .title{
+        font-size: $size-36;
+    }
+    .title:first-child{
+        margin: 10px 0 0 0;
+    }
+    .top-img{
+        margin: 60px 0;
+        img{
+            width: 100%;
+        }
+    }
+    .top-text{}
+    .middle-img{
+        margin: 60px 0;
+        img{
+            width: 100%;
+        }
+    }
+    .bottom-text{
+        .title{
+            font-size: $size-24;
+        }
+        .title:nth-child(3){
+            margin: 30px 0 0 0;
+        }
+    }
+    .bottom-img{
+        display: flex;
+        justify-content: center;
+        margin: 60px 0 45px 0;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+#case-latest{
+    .top-part{
+        p{
+            font-size: $size-36;
+            line-height: 46px;
+        }
+    }
+    .bottom-part{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+        padding: 50px 0 0 0;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 47.5%;
+            padding: 0 0 60px 0;
+            text-align: center;
+            .top-card{
+                img{
+                    max-width: 100%;
+                    max-height: 500px;
+                    border-radius: $br-25;
+                }
+            }
+            .bottom-card{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 30px 0 0 0;
+                text-align: left;
+                p{
+                    font-size: $size-24;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #landing-about{
+        flex-direction: column-reverse;
+        padding: 15px 0 0 0;
+        .left-part{
+            width: 100%;
+        }
+        .right-part{
+            width: 55%;
+            padding: 0 0 60px 0;
+        }
+    }
+
+    #landing-resume{
+        flex-direction: column-reverse;
+        .left-part{
+            display: none;
+        }
+        .right-part{
+            width: 100%;
+        }
+    }
+
+    #landing-why{
+        .bottom-part{
+            flex-direction: column;
+            .row{
+                .card{
+                    width: 40%;
+                }
+            }
+        }
+    }
+
+    #contact{
+        flex-direction: column;
+        .left-part{
+            width: 100%;
+            margin: 0 0 15px 0;
+            text-align: center;
+        }
+        .right-part{
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    #landing-review{
+        .top-part{
+            width: 100%;
+        }
+    }
+
+    #about-landing{
+        flex-direction: column;
+        padding: 15px 0 0 0;
+        .left-part{
+            width: 40%;
+            align-self: flex-start;
+            padding: 30px 0;
+        }
+        .right-part{
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    #about-contact{
+        flex-direction: column;
+        .left-part{
+            width: 100%;
+            margin: 0 0 15px 0;
+            text-align: center;
+        }
+        .right-part{
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    #projects-list{
+        .bottom-part{
+            .card{
+                padding: 0 0 60px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #landing-projects{
+        .bottom-part{
+            .card{
+                .bottom-card{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #landing-review{
+        .middle-part{
+            .thumbnails-row{
+                display: flex;
+                flex-direction: column;
+                .first-card{
+                    margin: 0 0 45px 0;
+                }
+            }
+        }
+    }
+
+    #projects-list{
+        .list-part{
+            ul{
+                li{
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .paddingX{
+        padding: 0 7.5%;
+    }
+
+    #header{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0 20px 0;
+        .left-part{
+            font-size: $size-32;
+        }
+        .right-part{
+            margin: 30px 0 0 0;
+            font-size: $size-24;
+        }
+    }
+
+    #about-landing{
+        .left-part{
+            align-self: center;
+            width: 50%;
+        }
+    }
+
+    #projects-list{
+        .bottom-part{
+            .card{
+                width: 97.5%;
+            }
+        }
+    }
+
+    #case-latest{
+        .bottom-part{
+            display: flex;
+            justify-content: center;
+            .card{
+                width: 77.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #contact{
+        .right-part{
+            .buttons-row{
+                flex-direction: column;
+                a:last-child{
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+
+    #about-contact{
+        .right-part{
+            .buttons-row{
+                flex-direction: column;
+                a:last-child{
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        padding: 30px 0 15px 0;
+        .left-part{
+            font-size: $size-24;
+        }
+        .right-part{
+            margin: 30px 0 0 0;
+            font-size: $size-18;
+        }
+    }
+
+    #landing-about{
+        .left-part{
+            width: 100%;
+            .welcome-message{
+                font-size: $size-24;
+            }
+            .name{
+                font-size: $size-36;
+                line-height: 54px;
+            }
+            .quote{
+                padding: 15px 0 0 0;
+                font-size: $size-18;
+                line-height: 27px;
+            }
+        }
+        .right-part{
+            width: 60%;
+            padding: 0 0 60px 0;
+        }
+    }
+
+    #landing-resume{
+        padding: 30px;
+        .right-part{
+            .top-part{
+                div{
+                    p:last-child{
+                        font-size: $size-18;
+                    }
+                }
+                div:first-child{
+                    p:first-child{
+                        font-size: $size-48;
+                        line-height: 62px;
+                    }
+                }
+                div:last-child{
+                    p:first-child{
+                        font-size: $size-48;
+                        line-height: 62px;
+                    }
+                }
+            }
+            .bottom-part{
+                padding: 15px 0 0 0;
+                p:first-child{
+                    font-size: 40px;
+                }
+                p:last-child{
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+
+    #landing-projects{
+        padding: 60px 0 0 0;
+        .top-part{
+            p{
+                font-size: 36px;
+                line-height: 62px;
+            }
+            a{
+                padding: 4px 12px;
+            }
+        }
+        .bottom-part{
+            padding: 15px 0 0 0;
+            .card{
+                .bottom-card{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #landing-why{
+        .bottom-part{
+            .row{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                .card{
+                    width: 80%;
+                    padding: 30px 0 0 0;
+                }
+            }
+        }
+    }
+
+    #contact{
+        .left-part{
+            font-size: $size-36;
+            line-height: 40px;
+        }
+        .right-part{
+            padding: 15px 0 0 0;
+            .buttons-row{
+                font-size: 20px;
+            }
+        }
+    }
+
+    #landing-review{
+        .top-part{
+            font-size: $size-36;
+            line-height: 40px;
+        }
+    }
+
+    #footer{
+        .left-part{
+            font-size: $size-24;
+        }
+        .right-part{
+            font-size: 20px;
+        }
+    }
+
+    #about-landing{
+        .left-part{
+            padding: 0 0 20px 0;
+        }
+        .right-part{
+            div:first-child{
+                font-size: $size-36;
+                line-height: 56px;
+            }
+            ul{
+                a{
+                    li{
+                        img{
+                            max-width: 45px;
+                            max-height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about-description{
+        font-size: $size-18;
+        line-height: 27px;
+    }
+
+    #about-contact{
+        padding: 45px 30px;
+        .left-part{
+            font-size: $size-36;
+            line-height: 40px;
+        }
+        .right-part{
+            .buttons-row{
+                font-size: 20px;
+            }
+        }
+    }
+
+    #projects-list{
+        padding: 60px 0 0 0;
+        .top-part{
+            font-size: $size-36;
+        }
+        .list-part{
+            ul{
+                font-size: $size-24;
+            }
+        }
+    }
+
+    #case-header{
+        padding: 65px 0 0 0;
+        p:nth-child(2){
+            font-size: $size-36;
+            line-height: 40px;
+        }
+    }
+
+    #case-description{
+        line-height: 27px;
+        .title{
+            font-size: 28px;
+            padding: 0 0 15px 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #landing-about{
+        .left-part{
+            .name{
+                padding: 5px 0 10px 0;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .right-part{
+            width: 70%;
+        }
+    }
+
+    #landing-resume{
+        .right-part{
+            .bottom-part{
+                p:first-child{
+                    font-size: 30px;
+                }
+                p:last-child{
+                    font-size: $size-18;
+                }
+            }
+        }
+    }
+
+    #landing-projects{
+        .top-part{
+            p{
+                font-size: 30px;
+                line-height: 48px;
+            }
+            a{
+                padding: 2px 4px;
+            }
+        }
+        .bottom-part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card{
+                width: 85%;
+            }
+            .card:first-child{
+                padding: 0 0 30px 0 ;
+            }
+        }
+    }
+
+    #landing-why{
+        padding: 90px 0 0 0;
+        .top-part{
+            font-size: $size-36;
+        }
+    }
+
+    #footer{
+        justify-content: space-between;
+        padding: 15px;
+        .middle-part{
+            display: none;
+        }
+    }
+
+    #about-landing{
+        .right-part{
+            div:first-child{
+                font-size: 30px;
+                line-height: 46px;
+            }
+        }
+    }
+
+    #projects-list{
+        .list-part{
+            ul{
+                display: flex;
+                flex-direction: column;
+                font-size: $size-24;
+                li{
+                    width: max-content;
+                }
+                li:nth-child(2) {
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #header{
+        .right-part{
+            margin: 30px 0 0 0;
+            font-size: $size-18;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px){
 }
