@@ -345,6 +345,10 @@ ul{
             .top-card{
                 img{
                     max-width: 100%;
+                    height: 200px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
                     border-radius: $br-20;
                 }
             }
