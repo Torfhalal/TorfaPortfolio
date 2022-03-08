@@ -1,0 +1,395 @@
+body{
+background-color: #15110C;
+}
+
+*{
+font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+color: white;
+font-size: 14px;
+margin: 0px;
+padding: 0px;
+}
+
+a{
+color:#ff9900;
+}
+
+a:hover{
+text-decoration-line: none;
+}
+
+p{
+font-size: 14px;
+line-height: 22px;
+}
+
+h1{
+font-size: 24px;
+padding: 20px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+h2{
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+h3{
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+line-height: 30px;
+}
+
+
+
+.in{
+position: relative;                   /*position relative*/      
+width:900px;                          /*largeur blocs*/
+margin: auto;                         /*centrer dans le bloc*/
+list-style-position: none;           /*puces&numéros*/
+}
+
+.header{
+background-color: #1E1912;          /*couleur d'arrière-plan*/
+top: 0px;                             /*collée en haut du bloc*/
+left: 30px;                           /*décalée du bord gauche du bloc*/
+display: block;                       /*zone cliquable*/
+padding-top: 30px;                    /*marge intérieure supérieure*/
+padding-bottom: 50px;                 /*marge intérieure inférieure*/
+color: white;                       /*couleur texte*/
+font-weight: bold;                    /*gras texte*/
+text-transform: uppercase;            /*majuscules texte*/
+text-align: center;                   /*centré*/
+}
+
+.header .in{
+background-image: url(img/www-d.jpg); /*image en arrière plan*/
+background-repeat: no-repeat;
+background-size: contain ;
+background-position: 30px 0px;
+}
+
+.header a{
+text-decoration: none;                /*sans soulignement*/
+}
+
+#first{
+font-size: 50px;                      /*taille caractères*/
+}
+
+#second{
+color: #ff9900;
+}
+
+
+
+.menu{
+height: 50px;                         /*hauteur*/
+margin-top: -25px;
+margin-bottom: -25px;
+z-index: 20;
+}
+
+.menu a{
+text-decoration: none;                /*sans soulignement*/
+color:#222211;                      /*couleur texte*/
+}
+
+.menu ul{
+background-color: #ff9900;          /*couleur arrière-plan*/
+}
+
+.menu li{
+display: inline-block;                /*type item*/
+height: 50px;                         /*largeur*/
+width: 146px;                         /*largeur*/
+color:#222211;                      /*couleur texte*/
+border-top: 1px solid #ffbb44;      /*bordure supérieure*/
+border-bottom: 1px solid #ffbb44;   /*bordure inférieure*/
+text-transform: uppercase;            /*majuscules texte*/
+line-height: 50px;
+text-align: center;
+}
+
+.menu li:hover{
+background-color: #ffbb44;
+}
+
+
+
+.headline{
+padding-top: 340px;                   /*marge intérieure supérieure*/
+padding-bottom: 100px;                /*marge intérieure inférieure*/
+background-image: url(img/tiger-d.jpg);
+background-position: center;          /*image centrée*/
+background-position-y: 0px;           /*image calée en haut*/
+background-repeat: no-repeat;
+background-size: auto;
+}
+
+.headline a{
+display: block;
+height: 20px;
+width: auto;
+padding: 5px;
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 10px;
+margin-left: 0px;
+background-color: #ff9900;
+color: white;
+text-align: center;
+text-decoration-line: none;
+text-transform: uppercase;
+font-size: 18px;
+line-height: 20px;
+box-shadow: -3px 3px 0px #bbbbbb ;
+}
+
+.headline a:hover{
+background-color: #ffbb44;
+}
+
+.headline p{
+font-size: 16px;
+line-height: 30px;
+}
+
+.headline h1{
+color: #ff9900;                     /*couleur titre*/
+}
+
+.headline h2{
+color: #222211;
+}
+
+.headline h2::before{
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+width: 20px;
+position: absolute;
+margin: 0;
+padding: 5px;
+padding-left: 35px;
+}
+
+.headline ol{
+position: absolute;
+right: 0px;
+top: -250px;
+width: 270px;
+}
+
+.headline ol p{
+margin: 0px;
+color: #222211;
+font-size: 14px;
+line-height: 20px;
+}
+
+.headline li{
+background-color: #d9d4be;
+padding: 10px;
+list-style: none;
+}
+
+.headline li::before{
+content: normal;
+}
+
+.headline #petition{
+background-color: #e6e4d8;
+margin-top: 10px;
+}
+
+.headline .donation a{
+background-color: #ff5400;
+}
+
+.headline .share{
+margin-top: 10px;
+}
+
+.headline .share a{
+background-color: #3b5998;
+}
+
+.headline .share #TW a{
+background-color: #1783ff;
+}
+
+
+.headline .agir::after{
+content:"→"; 
+}
+.healine .TW a{
+background-color: #1783ff;
+}
+
+
+
+.feature{
+height: 220px;                      /*mise en avant*/
+padding-top: 20px;                  /*marge intérieur supérieure*/
+padding-bottom: 20px;               /*marge intérieur inférieure*/
+}
+
+.feature a{
+display: block;                     /*liens de type block*/
+width: 100%;                       /*largeur*/
+height: 100%;                      /*hauteur*/
+padding: 5px;
+margin-left: -10px;
+background-color: #ff9900;
+color: white;
+text-decoration: none;
+}
+
+.feature ul{
+list-style-type: none;
+}
+
+.feature li{
+float: left;                        /*éléments qui flottent à gauche*/
+width: 280px;                       /*largeur*/
+height: 180px;                      /*hauteur*/
+margin-top: 20px;                   /*marge extérieure supérieure*/
+margin-bottom: 20px;                /*marge extérieure inférieure*/
+margin-right: 10px;                 /*marge extérieure droite*/
+margin-left: 10px;                  /*marge extérieure gauche*/
+background-image: url(img/tiger-pencil.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+.feature span{
+position: absolute;
+padding: 10px;                      /*marge intérieure*/
+margin-top: 10px;                   /*marge extérieure inférieure*/
+margin-bottom: 10px;                /*marge extérieure supérieure*/
+margin-right: 10px;                 /*marge extérieure droite*/
+margin-left: -10px;                 /*marge extérieure gauche*/
+box-shadow: none;                   /*pas d'ombre portée*/
+}
+
+
+
+.news{
+background-color: #1e1912;
+padding-top: 20px;                  /**/
+padding-bottom: 20px;               /**/
+}
+
+.news ul{
+list-style-type: none;
+}
+
+.news li{
+border-top: 1px solid #2f271c;    
+padding-top: 20px;                  /*marge intérieure supérieure*/
+padding-bottom: 20px;               /*marge intérieure inférieure*/
+}
+
+
+
+.footer{
+padding-top: 20px;
+padding-bottom: 40px;
+}
+
+.footer a{
+font-size: 12px;
+}
+
+.footer a::before{
+content: "|";
+color: white;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.footer li{
+display: inline;
+}
+
+.footer a:first-child{
+content: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+.in{
+width: 100%;
+}
+
+.header{
+background-image: url(img/www-m.jpg); /*image en arrière plan*/
+}
+
+.header h1{
+size: 20px;
+}
+
+.header #first, .header #second{
+margin: 20px;
+}
+
+#first{
+size: 26px;
+padding-top: 20px;
+}
+
+#second{
+size: 11px;
+}
+
+.menu{
+height: auto;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.menu li{
+float: fixed;
+width: 100%;
+height: 40px;
+}
+
+.menu a{
+line-height: 40px;
+}
+
+.headline{
+background-image: none;
+padding: 0;
+}
+
+.feature{
+display: none;
+}
+
+.news{
+display: none;
+}
+
+.footer ul{
+margin-left: 20px;
+margin-right: 20px;
+}
+}
